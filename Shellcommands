@@ -1,3 +1,5 @@
 bunzip2 -c Delays1987_2012.tar.bz2 | cut -f 15 -d , | sort -n | uniq -c > test.txt
 
 bunzip2 -c Delays1987_2012.tar.bz2 | cut -f 15 -d "," | sort -n | uniq -c  > test1.txt
+
+tar jxf Delays1987_2013.tar.bz2 
