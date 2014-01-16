@@ -34,4 +34,4 @@ sum_sq=0
 while (k<=numfreq) {
 	sum_sq=sum_sq+freq[k,1]*((freq[k,2]-mean)^2)
 	k=k+1}
-st_dev=(sum_sq/total_obs)^(1/2)
+st_dev=(sum_sq/(total_obs-1))^(1/2)
