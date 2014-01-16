@@ -35,3 +35,7 @@ while (k<=numfreq) {
 	sum_sq=sum_sq+freq[k,1]*((freq[k,2]-mean)^2)
 	k=k+1}
 st_dev=(sum_sq/(total_obs-1))^(1/2)
+
+bshaull_assign1=list(time = time, results = c(mean = mean, median = median, sd = st_dev),
+     system = Sys.info(),  session = sessionInfo())
+save(bshaull_assign1, file="bshaull_assign1.rda")
