@@ -1,3 +1,4 @@
+time=system.time(
 freq=read.table("test.txt", header= FALSE)
 numfreq=nrow(freq)-2
 freq$V2=as.integer(as.character(freq$V2)) #converting delay minutes into integers, originially stored differently
@@ -35,6 +36,7 @@ while (k<=numfreq) {
 	sum_sq=sum_sq+freq[k,1]*((freq[k,2]-mean)^2)
 	k=k+1}
 st_dev=(sum_sq/(total_obs-1))^(1/2)
+)
 
 bshaull_assign1=list(time = time, results = c(mean = mean, median = median, sd = st_dev),
      system = Sys.info(),  session = sessionInfo())
