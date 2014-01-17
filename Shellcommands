@@ -11,5 +11,4 @@ tar jxf Delays1987_2013.tar.bz2
 cut -f 15 -d ","| sort -n | uniq -c  > freq.txt
  
  ***Used this in Shell
- export Lang=C
  bunzip2 -c Delays1987_2013.tar.bz2 | cut -f 15 -d "," | sort -n | uniq -c  > freq.txt
