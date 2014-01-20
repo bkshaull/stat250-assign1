@@ -12,3 +12,30 @@ cut -f 15 -d ","| sort -n | uniq -c  > freq.txt
  
  ***Used this in Shell
  bunzip2 -c Delays1987_2013.tar.bz2 | cut -f 15 -d "," | sort -n | uniq -c  > freq.txt
+ 
+ 
+ 
+ shell loops:
+ 1987-1989:
+ 
+ for i in $(seq 7 9)
+ do 
+ tar jxf Delays1987_2013.tar.bz2 198$i.csv
+ done
+ 
+ for i in $(seq 7 9)
+ do 
+ rm -f 198$i.csv
+ done
+ 
+ 1990-1993:
+ 
+ for i in $(seq 1 3)
+ do 
+ rm -f num$i.docx
+ done
+ 
+ 
+ ***Checking disc space
+ df -h .
+ 
