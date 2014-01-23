@@ -1,6 +1,6 @@
-setwd()
-con=pipe('bunzip2 -c 1987.csv.bz2 | cut -f 15 -d ","')
-con1=pipe('bunzip2 -c 1987.csv.bz2 | wc -l')
+setwd(/Network/Servers/mars.ucdavis.edu/Volumes/UHome/Xtra/shaull/Documents/STA250)
+con=pipe('bunzip2 -c /Network/Servers/mars.ucdavis.edu/Volumes/UHome/Xtra/shaull/Documents/STA250/1987.csv.bz2 | cut -f 15 -d ","')
+con1=pipe('bunzip2 -c /Network/Servers/mars.ucdavis.edu/Volumes/UHome/Xtra/shaull/Documents/STA250/1987.csv.bz2 | wc -l')
  n_max=scan(con1)
  n_max=as.integer(n_max)
 
@@ -8,7 +8,7 @@ i=1
 m_n=0
 m_n_one=0
 s_n=0
-block=100000
+block=1000000
 med=rep(0, as.integer(n_max/block)+1)
 
 while (i*block<=n_max) {
