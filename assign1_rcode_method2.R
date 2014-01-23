@@ -1,6 +1,6 @@
 setwd()
-con=pipe('/Volumes/MTN_LION_BU/Users/Shared/Delays1987_2013/1987.csv | cut -f 15 -d ","')
-con1=pipe('bzip2 | wc -l')
+con=pipe('bunzip2 -c 1987.csv.bz2 | cut -f 15 -d ","')
+con1=pipe('bunzip2 -c 1987.csv.bz2 | wc -l')
  n_max=scan(con1)
  n_max=as.integer(n_max)
 
