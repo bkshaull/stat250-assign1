@@ -31,5 +31,5 @@ while (i*block<=n_max) {
 	i=i+1
 	}
 mean_1987=m_n
-var_1987=s_n
+sd_1987=(s_n)^(1/2)
 med_1987=median(med)
