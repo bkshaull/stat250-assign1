@@ -35,6 +35,10 @@ cut -f 15 -d ","| sort -n | uniq -c  > freq.txt
  rm -f num$i.docx
  done
  
+ for i in $(seq 7 9)
+ do 
+ cut -f 15 -d ","  198$i.csv | sort -n | uniq -c  >> freq.txt
+ done
  
  ***Checking disc space
  df -h .
