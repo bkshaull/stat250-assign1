@@ -1,0 +1,11 @@
+**had to compress and move files because I didn't have permission to pipe in the folder I was using
+for i in $(seq 1988 2007)
+do 
+bzip2 -zs $i.csv
+done
+
+
+for i in $(seq 2008 2012)
+do 
+bzip2 -zs $i*.csv
+done
