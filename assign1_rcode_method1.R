@@ -40,6 +40,6 @@ while (k<=numfreq) {
 st_dev=(sum_sq/(total_obs-1))^(1/2)
 time2=proc.time()-time1
 
-bshaull_assign1=list(time = time2, results = c(mean = mean, median = median, sd = st_dev),
+bshaull_assign1_method1=list(time = time2, results = c(mean = mean, median = median, sd = st_dev),
      system = Sys.info(),  session = sessionInfo())
 save(bshaull_assign1, file="bshaull_assign1.rda")
