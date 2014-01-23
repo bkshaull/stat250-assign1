@@ -30,3 +30,6 @@ while (i*block<=n_max) {
 
 	i=i+1
 	}
+mean_1987=m_n
+var_1987=s_n
+med_1987=median(med)
