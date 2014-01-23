@@ -1,0 +1,33 @@
+
+Getting 1987-1989 Frequency Tables
+for i in $(seq 7 9)
+do 
+cut -f 15 -d ","  198$i.csv | sort -n | uniq -c  >> freq.txt
+done
+
+Getting 1990-1999 Frequency Tables
+for i in $(seq 0 9)
+do 
+cut -f 15 -d ","  199$i.csv | sort -n | uniq -c  >> freq.txt
+done
+
+Getting 2000 Frequency Table
+cut -f 15 -d ","  2000.csv | sort -n | uniq -c  >> freq.txt
+
+Getting 2003-2007 Frequency Tables
+for i in $(seq 3 7)
+do 
+cut -f 15 -d ","  200$i.csv | sort -n | uniq -c  >> freq.txt
+done
+
+Getting 2008-2013
+for i in $(seq 8 9)
+do 
+cut -f 43 -d ","  200$i* | sort -n | uniq -c  >> freq.txt
+done
+
+for i in $(seq 10 13)
+do 
+cut -f 43 -d ","  20$i* | sort -n | uniq -c  >> freq.txt
+done
+
